@@ -1,38 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 82, 136);
+
+}
+
+li {
+  list-style-type: none;
+}
+
 .App {
+  padding: 10px;
+}
+
+.link_create, .link_close {
+  display: inline-block;
+  padding: 1px 8px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+
+  border: 1px solid rgb(0, 82, 136);
+  
+  text-decoration: none;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button_publish {
+  padding: 5px;
+
+  border: 1px solid rgb(0, 82, 136);
+  background-color: #fff;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.smallPost, .newPost {
+  padding: 10px;
+  width: 250px;
+  
+  border: 1px solid #000000
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.newPost{
+  text-align: end;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.textarea {
+  width: 228px;
+  height: 150px;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smallPost {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.postContent {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  
+  border: 1px solid #000000;
+}
+
+.bigPost {
+  width: 300px;
+  padding: 10px;
+
+  text-align: end;
+  
+  border: 1px solid #000000;
+}
+
+.bigPost_content {
+  text-align: start;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
 }
