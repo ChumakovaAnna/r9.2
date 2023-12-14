@@ -14,17 +14,8 @@ export default function CRUD() {
   
   useEffect(() => {
     getPost(usePosts);
-  },[])
+  },[newPost, deletePost])
 
-  useEffect(() => {
-    getPost(usePosts);
-  },[newPost])
-
-  useEffect(() => {
-    getPost(usePosts);
-  },[deletePost])
-
-  
   return (
     <div className='App'>
       <Router>
